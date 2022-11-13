@@ -5,6 +5,8 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
 import Header from './components/Header';
 import Editor from './components/Editor';
+import Homepage from './components/Homepage'
+import Aboutus from './components/Aboutus'
 
 
 function App() {
@@ -17,6 +19,9 @@ function App() {
         <Route element={<Login />}path="login"/>
         <Route element={<Signup/>}path="signup"/>
         <Route element={<Editor/>}path="editor"/>
+        <Route element={<Homepage />}path="homepage"/>
+        <Route element={<Aboutus />}path="aboutus"/>
+
         
       </Routes>
       </BrowserRouter>
